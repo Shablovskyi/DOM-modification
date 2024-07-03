@@ -24,20 +24,20 @@ toggleClassBtn.addEventListener("click", () => {
 
 replaceElemBtn.addEventListener("click", () => {
   const elements = content.querySelectorAll("p");
-  elements[0].innerText = "New text"
-})
+  elements[0].innerText = "New text";
+});
 
 insertFragmentBtn.addEventListener("click", () => {
   const fragment = document.createDocumentFragment();
 
-  const newP1 = document.createElement("p")
-  newP1.innerText = "New paragraf 1"
+  const newP1 = document.createElement("p");
+  newP1.innerText = "New paragraph 1";
 
-  const newP2 = document.createElement("p")
-  newP2.innerText = "New paragraf 2"
+  const newP2 = document.createElement("p");
+  newP2.innerText = "New paragraph 2";
 
-  fragment.appendChild(newP1)
-  fragment.appendChild(newP2)
-  
-  content.prepend(fragment)
-})
+  fragment.appendChild(newP1);
+  fragment.appendChild(newP2);
+
+  content.prepend(fragment);
+});
