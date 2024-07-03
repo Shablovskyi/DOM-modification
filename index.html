@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DOM Manipulation Practice</title>
-<style>
-.highlight {
-background-color: yellow;
-}
-.hidden {
-display: none;
-}
-</style>
-</head>
-<body>
-<h1>Welcome to DOM Manipulation Practice</h1>
-<div id="content">
-<p>This is a sample paragraph.</p>
-</div>
-<button id="addElementBtn">Add Element</button>
-<button id="toggleClassBtn">Toggle Class</button>
-<button id="replaceElementBtn">Replace Element</button>
-<button id="insertFragmentBtn">Insert Fragment</button>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Practice</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center font-black text-5xl my-[50px]">
+      Welcome to DOM Manipulation Practice
+    </h1>
+    <div id="content" class="container flex mb-[50px] flex-col text-center">
+      <p>This is a sample paragraph.</p>
+    </div>
+    <div class="flex justify-center content-center gap-[20px]">
+      <button id="addElementBtn" class="w-[200px] rounded-2xl bg-emerald-500">
+        Add Element
+      </button>
+      <button id="toggleClassBtn" class="w-[200px] rounded-2xl bg-lime-500">
+        Toggle Class
+      </button>
+      <button id="replaceElementBtn" class="w-[200px] rounded-2xl bg-blue-500">
+        Replace Element
+      </button>
+      <button id="insertFragmentBtn" class="w-[200px] rounded-2xl bg-rose-500">
+        Insert Fragment
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
