@@ -1,5 +1,6 @@
 const addElementBtn = document.getElementById("addElementBtn");
 const toggleClassBtn = document.getElementById("toggleClassBtn");
+const replaceElemBtn = document.getElementById("replaceElementBtn");
 
 const content = document.getElementById("content");
 
@@ -19,3 +20,8 @@ toggleClassBtn.addEventListener("click", () => {
     }
   });
 });
+
+replaceElemBtn.addEventListener("click", () => {
+  const elements = content.querySelectorAll("*")
+  elements[0].innerText = "New text"
+})
