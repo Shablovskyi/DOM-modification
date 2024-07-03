@@ -41,3 +41,18 @@ insertFragmentBtn.addEventListener("click", () => {
 
   content.prepend(fragment);
 });
+
+document.addEventListener("keydown", (event) => {
+  if (event.repeat) {
+    return;
+  }
+
+  console.log(`Key down: ${event.key}, Code: ${event.code}`);
+});
+
+document.addEventListener("keyup", (event) => {
+  if (event.repeat) {
+    return;
+  }
+  console.log(`Key up: ${event.key}, Code: ${event.code}`);
+});
