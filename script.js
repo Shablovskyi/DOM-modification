@@ -13,15 +13,11 @@ addElementBtn.addEventListener("click", () => {
 });
 
 
-toggleClassBtn.addEventListener("click", () => {
+toggleClassBtn.addEventListener("click", (e) => {
   const elements = content.querySelectorAll("p");
-  elements.forEach((elem) => {
-    if (elem.classList.contains("highlight")) {
-      elem.classList.remove("highlight");
-    } else {
-      elem.classList.add("highlight");
-    }
-  });
+  elements.forEach(elements => {
+    elements.classList.toggle("highlight")
+  })
 });
 
 replaceElemBtn.addEventListener("click", () => {
